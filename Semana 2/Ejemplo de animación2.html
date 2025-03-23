@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Ejemplo de animacion 2</title>
+  <style>
+    .move-horizontal {
+      width: 300px;
+      height:600px;
+      background-color: teal;
+      animation: moveRight 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveRight {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(1050px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="move-horizontal"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Ejemplo de animacion 3</title>
+  <style>
+    .pulse-color {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      animation: pulse 5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        background-color: #FF6347; /* Tomato */
+      }
+      50% {
+        background-color: #32CD32; /* Lime Green */
+      }
+      100% {
+        background-color: #1E90FF; /* Dodger Blue */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pulse-color"></div>
+</body>
+</html>
