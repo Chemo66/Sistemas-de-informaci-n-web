@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Ejemplo comninacion de selectores con herencia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; 
+      color: darkblue; 
+	  background-color: skyblue;
+    }
+    
+    div {
+      background-color: white;
+    }
+
+    div > p {
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: blue;
+    }
+
+    h2 + p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Titulo 1</h1>
+  <div>
+    <h2>Título 2</h2>
+    <p>Este párrafo está dentro de un div, así que hereda el color de fondo y la fuente del body, pero no hereda el color de los encabezados.</p>
+    <p>Este párrafo sigue inmediatamente al h2, por lo que su color es rojo debido al selector de hermano adyacente.</p>
+  </div>
+</body>
+</html>
+
+   
